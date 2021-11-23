@@ -2,9 +2,14 @@ package net.ferderplays.FlavenderCB.modules;
 
 import net.ferderplays.FlavenderCB.modules.*;
 
-public class category extends module {
-    public enum category {
-        combat("Combat")
+public class category {
+    public Category category;
+
+    public category(Category c) {
+        this.category = c;
     }
-    public static String category;
+
+    public enum Category {
+        COMBAT;
+    }
 }
